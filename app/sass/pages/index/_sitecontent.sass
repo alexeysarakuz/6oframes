@@ -1,0 +1,774 @@
+.about-section
+	padding: 100px 0
+	.about__content
+		h2
+			color: #1239ff
+			font-weight: 900
+			font-size: em(36px)
+			line-height: 1.15
+			+max-screen(992px)
+				font-size: em(31px)
+			+max-screen(500px)
+				text-align: center
+		h5
+			font-weight: 700
+			font-size: em(16px)
+			line-height: 1.44
+			color: #b7b7b7
+			+max-screen(500px)
+				text-align: center
+	.about__descr
+		h6
+			color: #777
+			margin-top: 20px
+			font-weight: 400
+			font-size: 16px
+			line-height: 1.625
+			text-align: left
+			+max-screen(992px)
+				font-size: 14px
+			+max-screen(500px)
+				text-align: center
+			span
+				a
+					color: #FC132D
+					text-decoration: underline
+					cursor: pointer
+					transition: .5s
+					&:hover
+						color: #333
+						text-decoration: none
+.section-works
+	+min-screen(1760px)
+		max-width: 1760px
+		margin: 0 auto
+		margin-bottom: 40px
+	.works__wrapper
+		.works__row
+			position: relative
+			.works__container
+				float: left
+				max-width: 25%
+				display: block
+				position: relative
+				overflow: hidden
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: #FC132D
+					transform: translateX(-440px)
+					transition: .5s
+					z-index: 10
+				&:hover
+					&::after
+						transform: translateX(0px)
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 10%
+					height: 100%
+					background-color: #FC132D
+					z-index: 12
+					transform: translateX(-440px)
+					transition: .03s
+				&:hover
+					&::before
+						transform: translateX(0px)
+					.works__content
+						transform: translateX(70px)
+						opacity: 1
+						+max-screen(1100px)
+							transform: translateX(30px)
+				img
+					max-width: 100%
+				.works__content
+					position: absolute
+					bottom: 23%
+					left: 0%
+					color: #fff
+					opacity: 0
+					z-index: 11
+					transform: translateX(-170px)
+					transition: .9s
+					cursor: pointer
+					h5
+						font-weight: 900
+						font-size: 27px
+						transition: .5s
+						margin-top: 10px
+						&:hover
+							color: #333333
+					h4
+						font-weight: 700
+						transition: .5s
+						&:hover
+							color: #333333
+				+max-screen(992px)
+					max-width: 33.3333333%
+					width: 33.3333333%
+				+max-screen(800px)
+					max-width: 50%
+					width: 50%
+					&.hidden-sm
+						display: block !important
+					&.hidden_all_screen
+						display: none !important
+				+max-screen(630px)
+					width: 70%
+					max-width: 70%
+					margin: 0 auto
+					margin-left: 15%
+					margin-right: 15%
+				+max-screen(450px)
+					width: 100%
+					max-width: 100%
+					margin-left: 0
+					margin-right: 0
+
+		.works__row2
+			div
+				float: right
+.section-looking-for
+	background-color: #1239FF
+	color: #fff
+	padding: 60px 0
+	h2
+		font-size: 40px
+		font-weight: 900
+		line-height: 1.35
+		margin-bottom: 20px
+		+max-screen(993px)
+			font-size: 32px
+		+max-screen(767px)
+			text-align: center
+		+max-screen(424px)
+			font-size: 28px
+	h5
+		line-height: 1.75
+		font-size: 16px
+		+max-screen(993px)
+			font-size: 14px
+		+max-screen(767px)
+			text-align: center
+	.looking-for__button
+		+max-screen(767px)
+			margin-left: 29.1666666667%
+		+max-screen(382px)
+			width: 100%
+			margin-left: 0
+	button
+		background-color: #FC132D
+		border: 1px solid #FC132D
+		font-weight: 900
+		font-size: 21px
+		font-family: Muli,sans-serif
+		margin-top: 30%
+		transition: .4s
+		&:hover
+			border: 1px solid #333333
+			background-color: #333333
+		a
+			color: #fff
+			padding: 20px 40px
+			display: block
+			+max-screen(993px)
+				padding: 0
+		+max-screen(993px)
+			font-size: 15px
+			padding: 15px 26px
+			margin-top: 30%
+		+max-screen(777px)
+			width: 100%
+			font-size: 13px
+		+max-screen(767px)
+			margin-top: 15%
+		+max-screen(382px)
+			width: 60%
+			margin-left: 20%
+		+max-screen(320px)
+			width: 80%
+			margin-left: 10%
+section.services-section
+	padding: 70px 0
+	.services__title
+		h4
+			color: #B7B7B7
+			font-weight: 900
+			font-size: 18px
+			margin-bottom: 30px
+			+max-screen(768px)
+				text-align: center
+		h2
+			color: #333333
+			font-size: 35px
+			font-weight: 900
+			line-height: 48px
+			+max-screen(774px)
+				font-size: 30px
+			+max-screen(768px)
+				text-align: center
+			+max-screen(700px)
+				font-size: 26px
+				line-height: 40px
+			+max-screen(600px)
+				font-size: 22px
+				line-height: 36px
+
+	.services__item
+		margin-bottom: 40px
+		margin-top: 40px
+		padding: 20px
+		+max-screen(991px)
+			width: 50%
+		+max-screen(768px)
+			width: 80%
+			margin-left: 10%
+		+max-screen(409px)
+			width: 90%
+			margin-left: 5%
+		+max-screen(370px)
+			width: 100%
+			margin-left: 0
+		+max-screen(340px)
+			padding: 10px
+		.item__content
+			width: 100%
+			border: 1px solid #DBDBDB
+			padding-bottom: 30px
+			padding-top: 5px
+			overflow: hidden
+			&:hover
+				h2,p,div.icon
+					color: #fff
+			div.icon
+				color: #DBDBDB
+				font-size: 30px
+				padding: 30px
+				width: auto
+				position: relative
+				transition: .2s
+				z-index: 4
+			h2,p
+				margin-left: 30px
+				margin-right: 30px
+				margin-bottom: 20px
+				position: relative
+				transition: .5s
+				z-index: 4
+				+max-screen(370px)
+					margin-left: 15px
+					margin-right: 15px
+					margin-bottom: 15px
+			h2
+				color: #1239ff
+				font-weight: 900
+				font-size: 22px
+				cursor: pointer
+				&:hover
+					color: #fc132d
+				+max-screen(427px)
+					font-size: 20px
+			p
+				color: #777
+				font-size: 16px
+				line-height: 1.425
+				font-weight: 400
+				+max-screen(427px)
+					line-height: 1.325
+					font-size: 14px
+		.item__content1
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises1.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+		.item__content2
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises2.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+		.item__content3
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises3.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+		.item__content4
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises4.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+		.item__content5
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises5.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+
+		.item__content6
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				top: 0px
+				background-position: center
+				transform: translateY(-500px)
+				background-size: cover
+				transition: .7s
+				background-image: url("../img/servises/servises6.jpg")
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 2
+				transition: .77s
+				transform: translateY(-500px)
+				background-image: linear-gradient(to top,#1239ff,rgba(18,57,255,0.5) 70%,rgba(18,57,255,0))
+			&:hover
+				&::after
+					transform: translateY(0)
+				&::before
+					transform: translateY(40px)
+section.our-statistics
+	text-align: center
+	color: #fff
+	background-color: #FC132D
+	padding: 70px 0 10px 0
+	span
+		font-size: 55px
+		margin-top: 20px
+	h3
+		font-size: 44px
+		font-weight: 900
+		margin-top: 30px
+	h5
+		font-size: 21px
+		margin-top: 12px
+		line-height: 1.3
+	.statistics__item
+		margin-bottom: 40px
+		+max-screen(767px)
+			margin-bottom: 40px
+			margin-top: 80px
+section.section-testimonials
+	padding: 100px 0
+	.testimonials__title
+		h4
+			font-size: 19px
+			color: #B7B7B7
+			font-weight: 900
+			text-align: center
+	div.owl-carousel
+		padding: 100px 0
+		.slide
+			padding-left: 20%
+			padding-right: 20%
+			+max-screen(1230px)
+				padding-left: 12%
+				padding-right: 12%
+			+max-screen(800px)
+				padding-left: 7%
+				padding-right: 7%
+			+max-screen(700px)
+				padding-left: 15%
+				padding-right: 15%
+				text-align: center
+				img
+					margin: 0 auto
+			+max-screen(470px)
+				padding-left: 10%
+				padding-right: 10%
+			img
+				max-width: 100px
+				max-height: 100px
+				border-radius: 50%
+			h2
+				color: #1239ff
+				font-weight: 900
+				font-size: 22px
+				margin-top: 30px
+				font-family: 'Muli', sans-serif
+				line-height: 1.6
+				+max-screen(1330px)
+					font-size: 17px
+				+max-screen(400px)
+					font-size: 14px
+			h4
+				color: #fc132d
+				font-weight: 900
+				margin-top: 50px
+				span
+					font-weight: 100
+		.owl-dots
+			text-align: center
+			margin-top: 40px
+			.owl-dot
+				width: 10px
+				height: 10px
+				background-color: #CCCBCB
+				border-radius: 50%
+				display: inline-block
+				margin-left: 5.5px
+				margin-right: 5.5px
+				&.active
+					background-color: #333
+		.owl-prev
+			background-image: url("../img/slider/back.svg")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			width: 30px
+			height: 30px
+			position: absolute
+			left: 2%
+			top: 40%
+			+max-screen(1241px)
+				left: .5%
+			+max-screen(1200px)
+				top: 10%
+			+max-screen(965px)
+				top: 30%
+			+max-screen(699px)
+				left: 4%
+			+max-screen(450px)
+				left: 2%
+		.owl-next
+			background-image: url("../img/slider/next.svg")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			width: 30px
+			height: 30px
+			position: absolute
+			right: 2%
+			top: 40%
+			+max-screen(1241px)
+				right: .5%
+			+max-screen(1200px)
+				top: 10%
+			+max-screen(965px)
+				top: 30%
+			+max-screen(699px)
+				right: 4%
+			+max-screen(450px)
+				right: 2%
+section.last-articles-slider
+	+max-screen(980px)
+		display: none
+	.owl-carousel
+		.slide1
+			background-image: url("../img/articles/art1.jpg")
+		.slide2
+			background-image: url("../img/articles/art2.jpg")
+		.slide3
+			background-image: url("../img/articles/art3.jpg")
+		.slide4
+			background-image: url("../img/articles/art4.jpg")
+		.slide5
+			background-image: url("../img/articles/art5.jpg")
+		.slide6
+			background-image: url("../img/articles/art6.jpg")
+		.slide7
+			background-image: url("../img/articles/art7.jpg")
+		.slide8
+			background-image: url("../img/articles/art8.jpg")
+		.slide
+			background-size: cover
+			height: 300px
+			position: relative
+			background-repeat: no-repeat
+			overflow: hidden
+			&:hover
+				.slider__content
+					h4,h2,h5
+						transform: translateX(200%)
+					h6,h3
+						transform: translateX(0)
+						left: 53px
+					h6
+						transition: .5s .23s
+					h3
+						transition: .5s .19s
+
+
+				&:before
+					transition: .4s .19s
+					transform: translateX(0%)
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				opacity: .5
+				background-color: #000
+				z-index: 3
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				opacity: .7
+				background-color: #1239FF
+				z-index: 4
+				transform: translateX(-200%)
+				transition: .4s
+			.slider__content
+				color: #fff
+				position: absolute
+				h1,h2,h3,h4,h5,h6
+					position: relative
+					cursor: pointer
+					z-index: 5
+				h4
+					font-size: 16px
+					letter-spacing: -.3px
+					font-weight: 900
+					top: 40px
+					left: 53px
+					transition: .8s
+				h2
+					top: 70px
+					left: 53px
+					max-width: 80%
+					font-size: 24px
+					font-weight: 900
+					line-height: 1.6
+					transition: 1.1s
+					+max-screen(605px)
+						font-size: 21px
+					+max-screen(559px)
+						font-size: 26px
+				h5
+					top: 170px
+					left: 53px
+					transition: 1.8s
+					b
+						font-weight: 900
+				h6
+					margin-top: 50px
+					color: #fff
+					font-size: 15px
+					+max-screen(1328px)
+						font-size: 12px
+						margin-top: 30px
+					+max-screen(605px)
+						font-size: 11px
+					+max-screen(559px)
+						font-size: 13px
+					&:hover
+						text-decoration: underline
+						color: #FC132D
+				h3
+					max-width: 80%
+					margin-top: -20px
+					font-size: 20px
+					line-height: 1.5
+					+max-screen(1328px)
+						font-size: 16px
+						margin-top: 30px
+						margin-top: -30px
+					+max-screen(1199px)
+						font-size: 19px
+					+max-screen(605px)
+						font-size: 16px
+					+max-screen(400px)
+						margin-right: 80px
+				h3,h6
+					transition: .5s
+					transform: translateX(-130%)
+		.owl-prev
+			background-image: url("../img/slider/left_arrow.svg")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 50%
+			width: 30px
+			height: 30px
+			position: absolute
+			left: 0%
+			top: 45%
+			padding: 25px
+			background-color: #FC132D
+			transition: .2s
+			&:hover
+				padding: 35px
+				top: 41%
+				+max-screen(660px)
+					padding: 25px
+					top: 45%
+				+max-screen(360px)
+					padding: 20px
+			+max-screen(360px)
+				padding: 20px
+		.owl-next
+			background-image: url("../img/slider/left_arrow.svg")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 50%
+			width: 30px
+			height: 30px
+			position: absolute
+			right: 0%
+			top: 45%
+			padding: 25px
+			background-color: #FC132D
+			transform: rotate(180deg)
+			transition: .2s
+			&:hover
+				padding: 35px
+				top: 41%
+				+max-screen(660px)
+					padding: 25px
+					top: 45%
+				+max-screen(360px)
+					padding: 20px
+			+max-screen(360px)
+				padding: 20px
+html body .footer-looking-for
+	background-color: #FC132D
+	button
+		background-color: #1239FF

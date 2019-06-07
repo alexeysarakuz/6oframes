@@ -1,0 +1,26 @@
+.social-networks
+  padding: 20px 0
+  background-color: #000
+  color: #777
+  +max-screen(600px)
+    text-align: center
+  .social__legal
+    float: left
+    +max-screen(600px)
+      float: none
+      margin-bottom: 30px
+  .social__icons
+    float: right
+    +max-screen(600px)
+      float: none
+      text-align: center
+      margin: 0 auto
+  .social__icons [class^="icon-"],.social__icons [class*=" icon-"]
+    margin: 0 8px
+    transition: .6s
+    cursor: pointer
+    float: left
+    +max-screen(600px)
+      float: none
+    &:hover
+      color: #fff

@@ -1,0 +1,148 @@
+nav
+	.nav__menu__container
+		margin-top: 22px
+		position: relative
+	.nav_trigger
+		width: 40px
+		height: 40px
+		position: absolute
+		top: -20px
+		left: -2px
+		cursor: pointer
+		+max-screen(575px)
+			left: 20px
+		+max-screen(389px)
+			left: 10px
+	.nav__menu
+		width: 30px
+		height: 1px
+		position: absolute
+		left: 0
+		background-color: #fff
+		transition: .2s
+		+max-screen(575px)
+			margin-left: 25px
+			margin-right: 25px
+		+max-screen(389px)
+			margin-left: 10px
+		&::after
+			content: ''
+			position: absolute
+			top: 8px
+			left: 0
+			width: 30px
+			height: 1px
+			background-color: #fff
+			transition: .3s
+		&::before
+			content: ''
+			position: absolute
+			top: -8px
+			left: 0
+			width: 30px
+			height: 1px
+			background-color: #fff
+			transition: .3s
+	.nav__menu.nav__menu-active
+		background-color: transparent
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			opacity: 1
+			width: 30px
+			height: 1px
+			background-color: #000
+			transform: rotate(-45deg)
+			top: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			opacity: 1
+			width: 30px
+			height: 1px
+			background-color: #000
+			transform: rotate(45deg)
+.fixed-hamb-menu
+	position: fixed
+	right: 0
+	top: 0
+	background-color: #151011
+	width: 50%
+	height: 100%
+	z-index: 800
+	opacity: .99
+	transform: translateX(100%)
+	transition: .5s
+	+max-screen(768px)
+		transition: .5s
+		width: 70%
+	+max-screen(600px)
+		width: 100%
+		height: 100%
+		text-align: center
+.fixed__close
+	background-color: transparent
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		opacity: 1
+		width: 23px
+		height: 1px
+		background-color: #fff
+		transform: rotate(-45deg)
+		top: 20px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 20px
+		opacity: 1
+		width: 23px
+		height: 1px
+		background-color: #fff
+		transform: rotate(45deg)
+.fixed-toggle span
+	color: #6A6A6A
+	position: absolute
+	top: 12px
+	left: 30px
+.fixed-toggle
+	position: absolute
+	top: 10%
+	left: 10%
+	height: 37px
+	width: 80px
+	cursor: pointer
+.fixed-hamb-menu ul
+	position: absolute
+	top: 20%
+	left: 10%
+	li
+		margin-top: 30px
+		margin-bottom: 30px
+		a
+			color: #fff
+			font-size: 40px
+			font-weight: 900
+			transition: .5s
+			&.active
+				text-decoration: underline
+				color: #777777
+			&:hover
+				color: #777
+				text-decoration: underline
+	+max-screen(600px)
+		text-align: center
+		width: 100%
+		left: 0
+.fixed-hamb-menu.hamb-active
+	transition: .5s
+	transform: translateX(0)
+body.ovh_body
+	+max-screen(600px)
+		overflow: hidden

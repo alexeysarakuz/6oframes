@@ -1,0 +1,99 @@
+footer
+	padding: 100px 0
+	background-color: #0D0D0D
+	color: #fff
+	+max-screen(767px)
+		padding: 100px 0 0 0
+	.footer__logo
+		font-style: italic
+		font-weight: 900
+		font-size: 40px
+		margin-bottom: 30px
+	.contacts-container
+		h2,h3,h4,h5
+			color: #777777
+			margin-top: 10px
+			margin-bottom: 10px
+			span
+				color: #414141
+	.footer__comments
+		h2
+			margin-bottom: 30px
+			font-size: 21px
+			font-weight: 900
+			margin-top: 14px
+		p
+			margin-bottom: 20px
+			margin-top: 20px
+		b
+			color: #E9122A
+			line-height: 1.4
+			font-weight: 900
+	.comments__author
+		margin-bottom: 10px
+		color: #5E5E5E
+		font-weight: 100
+		i
+			font-weight: 900
+			color: #777777
+	.footer__subscribe
+		h2
+			color: #fff
+			font-weight: 900
+			font-size: 17px
+			margin-bottom: 30px
+		h3
+			color: #717171
+			font-size: 14px
+			margin-bottom: 30px
+			line-height: 1.6
+		form
+			input
+				padding: 14px 10px
+				width: 100%
+				border: none
+				border-radius: 1px
+				font-size: 15px
+			button
+				background-color: #1239FF
+				color: #fff
+				padding: 12px 23px
+				border: 1px solid #1239FF
+				font-weight: 900
+				font-size: 18px
+				font-family: Muli,sans-serif
+				transition: .4s
+				float: right
+				&:hover
+					border: 1px solid #FC132D
+					background-color: #FC132D
+				+max-screen(360px)
+					font-size: 14px
+
+	.footer__col
+		+max-screen(991px)
+			width: 50%
+			margin-left: 0
+			margin-bottom: 40px
+			margin: 0 auto
+		+max-screen(767px)
+			width: 80%
+			margin-bottom: 90px
+			margin-left: 10%
+		+max-screen(450px)
+			width: 95%
+			margin-left: 2.5%
+		+max-screen(390px)
+			width: 98%
+			margin-left: 1%
+		+max-screen(300px)
+			width: 100%
+			margin-left: 0
+		.footer-col__content
+			+max-screen(991px)
+				width: 100%
+				margin-left: 0
+				margin: 0 auto
+			+max-screen(767px)
+				margin: 0 auto
+				text-align: center
